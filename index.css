@@ -38,7 +38,7 @@ main{
 }
 
 .hero {
-    background-image: url('raw-cooked-meat-steak-sliced-salt-added-served-black-table.jpg'); /* Reemplaza con la ruta a tu imagen */
+    background-image: url('/raw-cooked-meat-steak-sliced-salt-added-served-black-table.jpg'); /* Reemplaza con la ruta a tu imagen */
     background-size: cover;
     background-position: center;
     height: 100vh;
