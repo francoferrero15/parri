@@ -1,0 +1,227 @@
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+main{
+    background-color: #fff7ed;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos uniformemente */
+    width: 100%; /* Ocupa el ancho total del contenedor */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px; /* Espaciado entre los elementos del menú */
+}
+
+.nav-menu a {
+    color: #8B572A; /* Color del texto del menú */
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 10px; /* Espaciado interno de los enlaces */
+    display: flex;
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    background-color: #575757; /* Fondo al pasar el ratón por encima */
+    border-radius: 5px; /* Bordes redondeados al hacer hover */
+}
+
+.hero {
+    background-image: url('../fotos/raw-cooked-meat-steak-sliced-salt-added-served-black-table.jpg'); /* Reemplaza con la ruta a tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff7ed;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-image: url(''); /* Reemplaza con la ruta a tu imagen */
+    background-size: cover; /* Para que la imagen cubra todo el fondo */
+    background-attachment: fixed; /* La imagen se queda fija mientras scrolleas */
+    background-position: center; /* Centrar la imagen */
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.info {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.info h1 {
+    color: #8B572A;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info .hours {
+    color: #999999;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+
+.contacto {
+    color: #8B572A;
+    font-size: 18px;
+    margin-bottom: 10px;
+} 
+
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+   
+}
+
+.info-item {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.info-item img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.info-item h3 {
+    color: #8B572A;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    color: #111111;
+    font-size: 19px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.horarios{
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.dias{
+    color: #8B572A;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.info-container-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.menu{
+    
+        position: absolute; /* O fixed si quieres que el logo siempre esté visible incluso al hacer scroll */
+        top: 10px; /* Ajusta el valor según sea necesario */
+        left: 10px; /* Ajusta el valor según sea necesario */
+    
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+
+    .menu li a {
+        font-size: 20px;
+    }
+
+    .close-button {
+        font-size: 20px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .menu li::after {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu li a {
+        font-size: 18px;
+    }
+
+    .icono {
+        font-size: 16px;
+    }
+
+    .close-button {
+        font-size: 18px;
+    }
+
+    .menu li::after {
+        width: 90%;
+    }
+}
